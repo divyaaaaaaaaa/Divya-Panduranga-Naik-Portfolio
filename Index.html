@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya - Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--<link rel="stylesheet" href="">-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: /*rgb(179, 115, 84)*/ #003366/*#006400*//*#008080*/ /*#800020*/;
+            color: rgb(242, 241, 241);
+            font-family: 'Poppins';
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: /*rgb(215, 79, 79)*/#CCCCCC/*#FFFDD0*//*#FFFFFF*/ /*#FFB6C1*/;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin:0 23px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: /*rgb(134, 57, 57)*/#003366;
+        }
+        nav ul li a:hover{
+            font-size: 1.4rem;
+            color: /*rgb(18, 12, 104)*/#000000;
+            font-weight: bold;
+        }
+        .left{
+            color:#003366;       
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .SectionAction{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+            flex-wrap: wrap;/* Make it responsive */
+        }
+        .SectionAction > div{
+            width: 45%;/* Adjust width for better layout */
+        }
+        .leftSection {
+            /*background-color: rgb(249, 247, 250);*/
+            font-size: 2.5rem;/* Adjust font size */
+            margin:30px 0;
+            
+            line-height: 1.5; /* Improve spacing between lines */
+        }
+        .rightSection {
+            display: flex;
+            justify-content: center; /* Center image */
+            align-items: center;
+            /*background-color: rgb(249, 247, 250);*/
+        }
+        .rightSection img{
+            width: 40%;
+            height:auto;
+            border-radius: 5px;
+            
+        }
+        .blue{
+            color:/*rgba(240, 206, 13, 0.902)*//*#FFC300*//*#FF7F50*//*#40E0D0*//*#9370DB*/ #B87333 ;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Divya Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="SectionAction">
+            <div class="leftSection">
+                Hi, My name is 
+                <div><span class="blue">Divya Panduranga Naik</span></div>
+                <div>and I'm a passionate</div>    
+                <span id="element"></span><!-- Element to contain animated typing -->
+            </div>
+            <div class="rightSection">
+                <img src="Divya.jpeg" alt="developerimg">
+            </div>
+        </section>
+    </main>
+    
+  <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+   <script>
+    var typed = new Typed('#element', {
+      strings: ['SAP.','SAP ABAP.','Web Developer.', 'Java Developer.','Software Engineer.'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</body>
+<form action="">
+    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><img src="email.png" alt="email" height="40" width="40"></a>
+</form>
+</html>
