@@ -1,0 +1,118 @@
+       *{
+
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: /*rgb(179, 115, 84)*/ #003366/*#006400*//*#008080*/ /*#800020*/;
+            color: rgb(242, 241, 241);
+            font-family: 'Poppins';
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: /*rgb(215, 79, 79)*/#CCCCCC/*#FFFDD0*//*#FFFFFF*/ /*#FFB6C1*/;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin:0 23px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: /*rgb(134, 57, 57)*/#003366;
+        }
+        nav ul li a:hover{
+            font-size: 1.4rem;
+            color: /*rgb(18, 12, 104)*/#000000;
+            font-weight: bold;
+        }
+        .left{
+            color:#003366;       
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        #SectionAction{
+            display: flex;
+            justify-content: space-around;
+            /*align-items: center;
+            margin: 80px 50px;*/
+            flex-wrap: wrap;/* Make it responsive */
+           
+        }
+        
+        #SectionAction > div{
+            width: 35%; 
+         
+        }
+
+        /* Common styles for sections that are flex containers */
+.content-section {
+  display: none; /* hide by default */
+  flex-direction: row; /* layout children side by side */
+  align-items: center;
+  justify-content: space-around;
+  margin: 80px 50px;
+  flex-wrap: wrap;
+}
+
+/* When active, show the section with flex layout */
+.content-section.active {
+  display: flex;
+}
+
+/* Style for the image container to ensure it stays on right */
+
+        .leftSection {
+            /*background-color: rgb(249, 247, 250);*/
+            font-size: 2.5rem;/* Adjust font size */
+            margin:30px 0;
+            
+            line-height: 1.5; /* Improve spacing between lines */
+        }
+        .rightSection {
+            display: flex;
+            justify-content: center; /* Center image */
+            align-items: normal;
+            /*background-color: rgb(249, 247, 250);*/
+        }
+        .rightSection img{
+            width: 40%;
+            height:auto;
+            border-radius: 5px;
+            
+        }
+            
+        .blue{
+            color:/*rgba(240, 206, 13, 0.902)*//*#FFC300*//*#FF7F50*//*#40E0D0*//*#9370DB*/ #B87333 ;
+        }
+        #About{
+            display: flex;
+            justify-content: center; /* Center image */
+            align-items: center;
+            margin: 80px 0;
+            flex-wrap: wrap;
+        }
+        .left1-img{
+             border: 2px solid rgb(48, 10, 123);
+             width: 350px;          /* adjust size */
+             height: 350px;
+             border-radius: 50%;
+        }
+        #About > div{
+            width: 45%;
+        }
+        .right{
+            font-size: 1.5rem;/* Adjust font size */
+            margin:10px 0;
+            
+            line-height: 1.5;
+        }
+       
